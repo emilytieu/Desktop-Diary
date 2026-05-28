@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desktop Diary!</title>
+    <link href="../styles/journalEntries.css" rel="stylesheet">
+    <script defer src="../scripts/journalEntries.js"></script>
+    <script defer src="../scripts/windowControls.js"></script>
+  </head>
+  <body>
+    <div class="titlebar">
+        <div class="window-controls">
+            <button id="min-btn"> <img src="../assets/icons/minimize.png" alt="Minimize" draggable="false"> </button>
+            <button id="max-btn"> <img src="../assets/icons/maximize.png" alt="Maximize" draggable="false"> </button>
+            <button id="close-btn"> <img src="../assets/icons/close.png" alt="Close" draggable="false"> </button>
+        </div>
+    </div>
+    <div class="sidebar">
+        <button> <img src="../assets/icons/journal-icon.png" alt="Journal Icon" draggable="false" onclick="window.location.href='journal.html'"></button>
+        <button> <img src="../assets/icons/blank-icon.png" alt="Entries Icon" draggable="false" onclick="window.location.href='journalEntries.html'"></button>
+        <button> <img src="../assets/icons/blank-icon.png" alt="Stickers Icon" draggable="false" onclick="window.location.href='studio.html'"></button>
+        <button> <img src="../assets/icons/blank-icon.png" alt="Lock Icon" draggable="false" onclick="window.location.href='studio.html'"></button>
+        <button> <img src="../assets/icons/blank-icon.png" alt="Settings Icon" draggable="false" onclick="window.location.href='studio.html'"></button>
+    </div>
+    <div class="entriesList" id="entries-list"></div>
+    <div id="pagination"></div>
+    <div class="navbar">
+        <button><img src="../assets/icons/back-icon.png" alt="Back" draggable="false" onclick="window.history.back()"></button>
+    </div>
+  </body>
+</html>
