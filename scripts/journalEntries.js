@@ -32,9 +32,9 @@ window.addEventListener('DOMContentLoaded', async () => {
                     <div class="entry-time">${new Date(entry.created_at).toLocaleTimeString()}</div>
                 </div>
                 <div class="entry-actions">
-                    <button class="edit-btn">Edit</button>
-                    <button class="lock-btn">Lock</button>
-                    <button class="delete-btn">Delete</button>
+                    <button class="edit-btn"><img src="../assets/icons/edit-icon.png" alt="Edit" draggable="false"></button>
+                    <button class="lock-btn"><img src="../assets/icons/lock-icon.png" alt="Lock" draggable="false"></button>
+                    <button class="delete-btn"><img src="../assets/icons/delete-icon.png" alt="Delete" draggable="false"></button>
                 </div>
             `
 

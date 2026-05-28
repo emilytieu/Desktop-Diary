@@ -25,51 +25,6 @@ button, img {
     pointer-events: auto;
 }
 
-/* #region title bar */
-
-.titlebar {
-    height: 30px;
-    background: #f3d8dc;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    -webkit-app-region: drag;
-    padding-right: 8px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-.window-controls {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-left: auto;
-}
-
-.window-controls button {
-    -webkit-app-region: no-drag;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    padding: 0;
-}
-
-.window-controls button img {
-    width: 20px;
-    height: 20px;
-    display: block;
-}
-
-.window-controls button:active img {
-    filter: brightness(0.9);
-}
-/* #endregion */
-
 /* #region navbar */
 .navbar {
     height: 50px;
@@ -225,20 +180,30 @@ button, img {
 
 .entry-actions {
     display: flex;
-    gap: 4px;
 }
 
 .entry-actions button {
-    font-size: 8px;
-    padding: 4px 4px;
-    border-radius: 6px;
-    border: none;
     cursor: pointer;
+    background: transparent;
+    border: none;
+    height: 50px;
+    width: 50px;
 }
 
-.edit-btn { background: #4caf50; color: white; }
-.lock-btn { background: #ff9800; color: white; }
-.delete-btn { background: #f44336; color: white; }
+.entry-actions button img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.entry-actions button:hover img {
+    transform: scale(1.05);
+}
+
+.entry-actions button:active img {
+    filter: brightness(0.95);
+}
 /* #endregion */
 
 /* #region pagination */

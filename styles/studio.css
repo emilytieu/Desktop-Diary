@@ -25,50 +25,6 @@ button, img {
     pointer-events: auto;
 }
 
-/* #region titlebar */
-.titlebar {
-    height: 30px;
-    background: #f3d8dc;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    -webkit-app-region: drag;
-    padding-right: 8px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-.window-controls {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-left: auto;
-}
-
-.window-controls button {
-    -webkit-app-region: no-drag;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    padding: 0;
-}
-
-.window-controls button img {
-    width: 25px;
-    height: 25px;
-    display: block;
-}
-
-.window-controls button:active img {
-    filter: brightness(0.9);
-}
-/* #endregion titlebar */
-
 /* #region navbar */
 .navbar {
     height: 50px;

@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desktop Diary!</title>
     <link href="../styles/title.css" rel="stylesheet">
+    <link href="../styles/windowControls.css" rel="stylesheet">
     <script defer src="../scripts/windowControls.js"></script>
   </head>
   <body>
-      <img class="logo" src="../assets/logo-blue.png" alt="Desktop Diary logo">
-      
-      <div class="button-container">
-        <button onclick="window.location.href='studio.html'">Start Writing!</button>
-      </div>
+    <div class="titlebar">
+        <div class="window-controls">
+            <button id="min-btn"> <img src="../assets/icons/minimize.png" alt="Minimize" draggable="false"> </button>
+            <button id="max-btn"> <img src="../assets/icons/maximize.png" alt="Maximize" draggable="false"> </button>
+            <button id="close-btn"> <img src="../assets/icons/close.png" alt="Close" draggable="false"> </button>
+        </div>
+    </div>
 
-      <!-- <img class="journal" src="assets/open-journal.png" alt="Journal"> -->
+    <img class="logo" src="../assets/logo-blue.png" alt="Desktop Diary logo">
+    <div class="button-container">
+      <button onclick="window.location.href='studio.html'">Start Writing!</button>
+    </div>
   </body>
 </html>
