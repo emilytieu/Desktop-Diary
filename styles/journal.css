@@ -65,6 +65,11 @@ button, img {
     transition: transform 0.2s ease;
 }
 
+.navbar #new-entry-btn img {
+    width: 150px;
+    height: auto;
+}
+
 .navbar button:hover img {
     transform: scale(1.05);
 }
@@ -149,15 +154,15 @@ button, img {
     width: 100%;
     border: none;
     outline: none;
-    font-size: 22px;
+    font-size: 48px;
     font-weight: bold;
     background: transparent;
     font: inherit;
 }
 
 .entry-content textarea {
-    width: 100%;
-    height: 125%;
+    width: 270px;
+    height: 160px;
     resize: none;
     border: none;
     outline: none;

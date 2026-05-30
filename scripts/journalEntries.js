@@ -25,8 +25,9 @@ window.addEventListener('DOMContentLoaded', async () => {
                 <img class="entry-thumb" src="../assets/icons/blank-icon.png" alt="Entry Thumbnail">
                 <div class="entry-main">
                     <div class="entry-title">${entry.title}</div>
-                    <div class="entry-preview">${entry.content.substring(0, 120)}</div>
+                    <div class="entry-preview">${entry.content.substring(0, 20)}...</div>
                 </div>
+                <div class="entry-spacer"></div>
                 <div class="entry-meta">
                     <div class="entry-date">${new Date(entry.created_at).toLocaleDateString()}</div>
                     <div class="entry-time">${new Date(entry.created_at).toLocaleTimeString()}</div>
